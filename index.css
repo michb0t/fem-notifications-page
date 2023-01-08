@@ -1,0 +1,113 @@
+
+  .attribution { margin-top: 10px;font-size: 11px; text-align: center; }
+  .attribution a { color: hsl(228, 45%, 44%); }
+
+:root {
+    --red: hsl(1, 90%, 64%);
+    --blue: hsl(219, 85%, 26%);
+    --white: hsl(0, 0%, 100%);
+    --blue-100: hsl(210, 60%, 98%);
+    --blue-200: hsl(211, 68%, 94%);
+    --blue-250: hsl(205, 33%, 90%);
+    --blue-300: hsl(219, 14%, 63%);
+    --blue-400:  hsl(219, 12%, 42%);
+    --blue-500:  hsl(224, 21%, 14%);
+  }
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    min-width: 475px;
+    max-width: 800px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    margin: 0 auto;
+    margin-top: 15px;
+    background: var(--blue-200)
+}
+
+.main {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 5px 8px 10px rgba(115, 114, 114, 0.2);
+    margin: 25px;
+}
+
+p {
+    font-size: 16px;
+    color: var(--blue-400);
+    margin: 0;
+
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    place-items: center;
+}
+
+.mark-btn {
+    background: none;
+    text-decoration: none;
+}
+.numNotes {
+    background: var(--blue);
+    color: white;
+    padding: 5px 15px;
+    border-radius: 9px;
+    margin: 0 10px;
+}
+
+.username {
+    font-weight: 800;
+    color: black;
+
+}
+
+.timeStamp {
+    color: var(--blue-250);
+    margin: 0;
+    padding: 0;
+}
+.card {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.card > img {
+    width: 60px;
+    height: 60px;
+}
+
+/* unread states */
+
+.unread-circle {
+    background: red;
+    width: 10px;
+    height:10px;
+    border-radius: 100%;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+.unread {
+    background: var(--blue-100);
+}
+
+.comment {
+    border: 1px solid black;
+    border-color: var(--blue-200);
+    padding: 20px;
+    margin: 10px 0;
+}
+
